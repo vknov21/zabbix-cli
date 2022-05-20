@@ -32,7 +32,7 @@
           <div class="body" role="main">
             
   <section id="zabbix-cli">
-<h1><a class="toc-backref" href="#id1">Zabbix-CLI</a><a class="headerlink" href="#zabbix-cli" title="Permalink to this headline">¶</a></h1>
+<h1><a class="toc-backref" href="#id3">Zabbix-CLI</a><a class="headerlink" href="#zabbix-cli" title="Permalink to this headline">¶</a></h1>
 <div class="line-block">
 <div class="line"><br /></div>
 <div class="line">Version-2.1.0</div>
@@ -46,28 +46,28 @@
 <div class="contents topic" id="contents">
 <p class="topic-title">Contents</p>
 <ul class="simple">
-<li><p><a class="reference internal" href="#zabbix-cli" id="id1">Zabbix-CLI</a></p>
+<li><p><a class="reference internal" href="#zabbix-cli" id="id3">Zabbix-CLI</a></p>
 <ul>
-<li><p><a class="reference internal" href="#introduction" id="id2">Introduction</a></p></li>
-<li><p><a class="reference internal" href="#main-features" id="id3">Main features</a></p></li>
-<li><p><a class="reference internal" href="#configuration" id="id4">Configuration</a></p>
+<li><p><a class="reference internal" href="#introduction" id="id4">Introduction</a></p></li>
+<li><p><a class="reference internal" href="#main-features" id="id5">Main features</a></p></li>
+<li><p><a class="reference internal" href="#configuration" id="id6">Configuration</a></p>
 <ul>
-<li><p><a class="reference internal" href="#configuration-file" id="id5">Configuration file</a></p></li>
-<li><p><a class="reference internal" href="#environment-authentication" id="id6">Environment Authentication</a></p></li>
-<li><p><a class="reference internal" href="#authentication-file" id="id7">Authentication file</a></p></li>
-<li><p><a class="reference internal" href="#authentication-token-file" id="id8">Authentication token file</a></p></li>
+<li><p><a class="reference internal" href="#configuration-file" id="id7">Configuration file</a></p></li>
+<li><p><a class="reference internal" href="#environment-authentication" id="id8">Environment Authentication</a></p></li>
+<li><p><a class="reference internal" href="#authentication-file" id="id9">Authentication file</a></p></li>
+<li><p><a class="reference internal" href="#authentication-token-file" id="id10">Authentication token file</a></p></li>
 </ul>
 </li>
-<li><p><a class="reference internal" href="#zabbix-cli-shell" id="id9">Zabbix-CLI shell</a></p></li>
-<li><p><a class="reference internal" href="#interactive-shell-commands" id="id10">Interactive shell commands</a></p></li>
-<li><p><a class="reference internal" href="#authors" id="id11">Authors</a></p></li>
-<li><p><a class="reference internal" href="#license-and-contributions" id="id12">License and Contributions</a></p></li>
+<li><p><a class="reference internal" href="#zabbix-cli-shell" id="id11">Zabbix-CLI shell</a></p></li>
+<li><p><a class="reference internal" href="#interactive-shell-commands" id="id12">Interactive shell commands</a></p></li>
+<li><p><a class="reference internal" href="#authors" id="id13">Authors</a></p></li>
+<li><p><a class="reference internal" href="#license-and-contributions" id="id14">License and Contributions</a></p></li>
 </ul>
 </li>
 </ul>
 </div>
 <section id="introduction">
-<h2><a class="toc-backref" href="#id2">Introduction</a><a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id4">Introduction</a><a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
 <p>Zabbix-cli is a terminal client for managing some Zabbix
 administration tasks via the zabbix-API.</p>
 <p>The zabbix-cli code is distributed under the GNU General Public
@@ -76,7 +76,7 @@ tested by members of the Department for IT Infrastructure at the
 Center for Information Technology at the University of Oslo, Norway.</p>
 </section>
 <section id="main-features">
-<h2><a class="toc-backref" href="#id3">Main features</a><a class="headerlink" href="#main-features" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id5">Main features</a><a class="headerlink" href="#main-features" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>Terminal client</p></li>
 <li><p>Two execution modes available: Zabbix-CLI shell and commandline.</p></li>
@@ -92,9 +92,9 @@ support for autologin.</p></li>
 </ul>
 </section>
 <section id="configuration">
-<h2><a class="toc-backref" href="#id4">Configuration</a><a class="headerlink" href="#configuration" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id6">Configuration</a><a class="headerlink" href="#configuration" title="Permalink to this headline">¶</a></h2>
 <section id="configuration-file">
-<h3><a class="toc-backref" href="#id5">Configuration file</a><a class="headerlink" href="#configuration-file" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id7">Configuration file</a><a class="headerlink" href="#configuration-file" title="Permalink to this headline">¶</a></h3>
 <p>Zabbix-cli has a <strong>multilevel configuration system.</strong></p>
 <p>This means thet we do not override entire configuration files but we
 merge all the defined configuration files in our system and use the
@@ -166,7 +166,7 @@ configuration parameters that zabbix-cli is using, use
 </div>
 </section>
 <section id="environment-authentication">
-<h3><a class="toc-backref" href="#id6">Environment Authentication</a><a class="headerlink" href="#environment-authentication" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id8">Environment Authentication</a><a class="headerlink" href="#environment-authentication" title="Permalink to this headline">¶</a></h3>
 <p>You can define the <code class="docutils literal notranslate"><span class="pre">ZABBIX_USERNAME</span></code> and <code class="docutils literal notranslate"><span class="pre">ZABBIX_PASSWORD</span></code> environment
 variables to pass authentication credentials to <code class="docutils literal notranslate"><span class="pre">zabbix-cli</span></code>.</p>
 <p>For example:</p>
@@ -178,7 +178,7 @@ variables to pass authentication credentials to <code class="docutils literal no
 <p><strong>NOTE</strong>: It is important to remember that this method will save the password in clear text in a environment variable. This value will be available to other processes running in the same session.</p>
 </section>
 <section id="authentication-file">
-<h3><a class="toc-backref" href="#id7">Authentication file</a><a class="headerlink" href="#authentication-file" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id9">Authentication file</a><a class="headerlink" href="#authentication-file" title="Permalink to this headline">¶</a></h3>
 <p>You can define the file <code class="docutils literal notranslate"><span class="pre">$HOME/.zabbix-cli_auth</span></code> if you want to
 avoid to write your username and password everytime you use
 <code class="docutils literal notranslate"><span class="pre">zabbix-cli</span></code>. This can be useful if you are running <code class="docutils literal notranslate"><span class="pre">zabbix-cli</span></code>
@@ -190,7 +190,7 @@ in non-interactive modus from scripts or automated jobs.</p>
 <p><strong>NOTE:</strong> The password will be saved in clear text so be carefull with the information saved here and restrict access to this file only to your user. <code class="docutils literal notranslate"><span class="pre">chmod</span> <span class="pre">400</span> <span class="pre">~/.zabbix-cli_auth</span></code> will be defined by <code class="docutils literal notranslate"><span class="pre">zabbix-cli</span></code> on this file the first time it uses it.</p>
 </section>
 <section id="authentication-token-file">
-<h3><a class="toc-backref" href="#id8">Authentication token file</a><a class="headerlink" href="#authentication-token-file" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id10">Authentication token file</a><a class="headerlink" href="#authentication-token-file" title="Permalink to this headline">¶</a></h3>
 <p>The file <code class="docutils literal notranslate"><span class="pre">$HOME/.zabbix-cli_auth_token</span></code> will be created with
 information about the API-auth-token from the last login if the
 parameter <code class="docutils literal notranslate"><span class="pre">use_auth_token_file=ON</span></code> is defined in the configuration
@@ -208,7 +208,7 @@ with a valid username and password.</p>
 </section>
 </section>
 <section id="zabbix-cli-shell">
-<h2><a class="toc-backref" href="#id9">Zabbix-CLI shell</a><a class="headerlink" href="#zabbix-cli-shell" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id11">Zabbix-CLI shell</a><a class="headerlink" href="#zabbix-cli-shell" title="Permalink to this headline">¶</a></h2>
 <p>The Zabbix-CLI interactive shell can be started by running the program
 <code class="docutils literal notranslate"><span class="pre">/usr/bin/zabbix-cli</span></code></p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>[user@host]# zabbix-cli
@@ -371,10 +371,938 @@ or special characters for the shell.e.g.</p>
 </div>
 </section>
 <section id="interactive-shell-commands">
-<h2><a class="toc-backref" href="#id10">Interactive shell commands</a><a class="headerlink" href="#interactive-shell-commands" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id12">Interactive shell commands</a><a class="headerlink" href="#interactive-shell-commands" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="zabbix_cli.cli.zabbixcli">
+<em class="property"><span class="pre">class</span><span class="w">  </span></em><span class="sig-prename descclassname"><span class="pre">zabbix_cli.cli.</span></span><span class="sig-name descname"><span class="pre">zabbixcli</span></span><a class="headerlink" href="#zabbix_cli.cli.zabbixcli" title="Permalink to this definition">¶</a></dt>
+<dd><p>This class implements the Zabbix shell. It is based on the python module cmd.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="zabbix_cli.cli.zabbixcli.do_EOF">
+<span class="sig-name descname"><span class="pre">do_EOF</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#zabbix_cli.cli.zabbixcli.do_EOF" title="Permalink to this definition">¶</a></dt>
+<dd><p>DESCRIPTION:
+Quit/terminate the Zabbix-CLI shell.</p>
+<p>COMMAND:
+EOF</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="zabbix_cli.cli.zabbixcli.do_acknowledge_event">
+<span class="sig-name descname"><span class="pre">do_acknowledge_event</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#zabbix_cli.cli.zabbixcli.do_acknowledge_event" title="Permalink to this definition">¶</a></dt>
+<dd><p>DESCRIPTION:
+This command acknowledges an event</p>
+<p>COMMAND:
+acknowledge_events [eventIDs]</p>
+<blockquote>
+<div><p>[message]</p>
+</div></blockquote>
+<p>IDs of the events to acknowledge. One can define several
+values in a comma separated list.</p>
+<p>Text of the acknowledgement message.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="zabbix_cli.cli.zabbixcli.do_acknowledge_trigger_last_event">
+<span class="sig-name descname"><span class="pre">do_acknowledge_trigger_last_event</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#zabbix_cli.cli.zabbixcli.do_acknowledge_trigger_last_event" title="Permalink to this definition">¶</a></dt>
+<dd><p>DESCRIPTION:</p>
+<p>This command acknowledges the last event of a trigger.</p>
+<p>COMMAND:
+acknowledge_trigger_last_event [triggerIDs]</p>
+<blockquote>
+<div><p>[message]</p>
+</div></blockquote>
+<p>IDs of the triggers to acknowledge. One can define several
+values in a comma separated list.</p>
+<p>Text of the acknowledgement message.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="zabbix_cli.cli.zabbixcli.do_add_host_to_hostgroup">
+<span class="sig-name descname"><span class="pre">do_add_host_to_hostgroup</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#zabbix_cli.cli.zabbixcli.do_add_host_to_hostgroup" title="Permalink to this definition">¶</a></dt>
+<dd><p>DESCRIPTION:
+This command adds one/several hosts to
+one/several hostgroups</p>
+<p>COMMAND:
+add_host_to_hostgroup [hostnames]</p>
+<blockquote>
+<div><p>[hostgroups]</p>
+</div></blockquote>
+<p>Hostnames or IDs.
+One can define several values in a comma separated list.</p>
+<p>Hostgroup names or IDs.
+One can define several values in a comma separated list.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="zabbix_cli.cli.zabbixcli.do_add_user_to_usergroup">
+<span class="sig-name descname"><span class="pre">do_add_user_to_usergroup</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#zabbix_cli.cli.zabbixcli.do_add_user_to_usergroup" title="Permalink to this definition">¶</a></dt>
+<dd><p>DESCRIPTION:
+This command adds one/several users to
+one/several usergroups</p>
+<p>COMMAND:
+add_user_to_usergroup [usernames]</p>
+<blockquote>
+<div><p>[usergroups]</p>
+</div></blockquote>
+<p>Usernames or IDs.
+One can define several values in a comma separated list.</p>
+<p>Usergroup names or IDs.
+One can define several values in a comma separated list.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="zabbix_cli.cli.zabbixcli.do_add_usergroup_permissions">
+<span class="sig-name descname"><span class="pre">do_add_usergroup_permissions</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#zabbix_cli.cli.zabbixcli.do_add_usergroup_permissions" title="Permalink to this definition">¶</a></dt>
+<dd><p>DESCRIPTION:
+This command adds a permission for an usergroup
+on a hostgroup.</p>
+<p>If the usergroup already have permissions on the hostgroup,
+nothing will be changed.</p>
+<p>COMMAND:
+define_usergroup_permissions [usergroup]</p>
+<blockquote>
+<div><p>[hostgroups]
+[permission code]</p>
+</div></blockquote>
+<p>Usergroup that will get a permission on a hostgroup</p>
+<p>Hostgroup names where the permission will apply.</p>
+<p>One can define several values in a comma separated list.</p>
+<ul class="simple">
+<li><p>deny: Deny [usergroup] all access to [hostgroups]</p></li>
+<li><p>ro: Give [usergroup] read access to [hostgroups]</p></li>
+<li><p>rw: Give [usergroup] read and write access to [hostgroups]</p></li>
+</ul>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="zabbix_cli.cli.zabbixcli.do_clear">
+<span class="sig-name descname"><span class="pre">do_clear</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#zabbix_cli.cli.zabbixcli.do_clear" title="Permalink to this definition">¶</a></dt>
+<dd><p>DESCRIPTION:
+Clears the screen and shows the welcome banner.</p>
+<p>COMMAND:
+clear</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="zabbix_cli.cli.zabbixcli.do_create_host">
+<span class="sig-name descname"><span class="pre">do_create_host</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#zabbix_cli.cli.zabbixcli.do_create_host" title="Permalink to this definition">¶</a></dt>
+<dd><p>DESCRIPTION:
+This command creates a host.</p>
+<p>COMMAND:
+create_host [hostname|IP]</p>
+<blockquote>
+<div><p>[hostgroups]
+[proxy]
+[status]</p>
+</div></blockquote>
+<p>Hostname or IP</p>
+<p>Hostgroup names or IDs. One can define several values in a
+comma separated list.</p>
+<p>Remember that the host will get added to all hostgroups
+defined with the parameter ‘default_hostgroup’ in the
+zabbix-cli configuration file ‘zabbix-cli.conf’</p>
+<p>This command will fail if both ‘default_hostgroup’ and
+[hostgroups] are empty.</p>
+<p>Proxy server used to monitor this host. One can use regular
+expressions to define a group of proxy servers from where the
+system will choose a random proxy.</p>
+<p>If this parameter is not defined, the system will assign a
+random proxy from the list of all available proxies.</p>
+<p>If the system does not have proxy servers defined, the new
+host will be monitor by the Zabbix-server.</p>
+<p>e.g. Some regular expressions that can be used:</p>
+<ul>
+<li><p>proxy-(prod|test)+d.example.org
+e.g. proxy-prod1.example.org and proxy-test8.example.org</p>
+<blockquote>
+<div><p>will match this expression.</p>
+</div></blockquote>
+</li>
+<li><p>.+
+All proxies will match this expression.</p></li>
+</ul>
+<p>0:’Monitored’ [*]
+1:’Unmonitored’</p>
+<p>All host created with this command will get assigned a
+default interface of type ‘Agent’ using the port 10050.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="zabbix_cli.cli.zabbixcli.do_create_host_interface">
+<span class="sig-name descname"><span class="pre">do_create_host_interface</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#zabbix_cli.cli.zabbixcli.do_create_host_interface" title="Permalink to this definition">¶</a></dt>
+<dd><p>DESCRIPTION:
+This command creates a hostinterface.</p>
+<p>COMMAND:
+create_host_interface [hostname]</p>
+<blockquote>
+<div><p>[interface connection]
+[interface type]
+[interface port]
+[interface IP]
+[interface DNS]
+[default interface]</p>
+</div></blockquote>
+<p>Hostname</p>
+<p>0: Connect using host DNS name or interface DNS if provided [*]
+1: Connect using host IP address</p>
+<p>1: Zabbix agent
+2: SNMP [*]
+3: IPMI
+4: JMX</p>
+<p>Interface port [161]</p>
+<p>IP address if interface connection is 1:</p>
+<p>DNS if interface connection is 0: (hostname by default)</p>
+<p>0: Not default interface
+1: Default interface [*]</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="zabbix_cli.cli.zabbixcli.do_create_hostgroup">
+<span class="sig-name descname"><span class="pre">do_create_hostgroup</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#zabbix_cli.cli.zabbixcli.do_create_hostgroup" title="Permalink to this definition">¶</a></dt>
+<dd><p>DESCRIPTION:
+This command creates a hostgroup</p>
+<p>COMMAND:
+create_hostgroup [hostgroup]</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="zabbix_cli.cli.zabbixcli.do_create_maintenance_definition">
+<span class="sig-name descname"><span class="pre">do_create_maintenance_definition</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#zabbix_cli.cli.zabbixcli.do_create_maintenance_definition" title="Permalink to this definition">¶</a></dt>
+<dd><p>DESCRIPTION:</p>
+<p>This command creates a ‘one time only’ maintenance definition
+for a defined period of time. Use the zabbix dashboard for
+more advance definitions.</p>
+<p>COMMAND:
+create_maintenance_definition [name]</p>
+<blockquote>
+<div><p>[description]
+[host/hostgroup]
+[time period]
+[maintenance type]</p>
+</div></blockquote>
+<p>Maintenance definition name.</p>
+<p>Maintenance definition description</p>
+<p>Host/s and/or hostgroup/s the that will undergo
+maintenance.</p>
+<p>One can define more than one value in a comma separated list
+and mix host and hostgroup values.</p>
+<p>Time period when the maintenance must come into effect.</p>
+<p>One can define an interval between to timestamps in ISO format
+or a time period in minutes, hours or days from the moment the
+definition is created.</p>
+<dl class="simple">
+<dt>e.g. From 22:00 until 23:00 on 2016-11-21 -&gt; ‘2016-11-21T22:00 to 2016-11-21T23:00’</dt><dd><p>2 hours from the moment we create the maintenance -&gt; ‘2 hours’</p>
+</dd>
+</dl>
+<p>Maintenance type.</p>
+<p>Type values:</p>
+<p>0 - (default) With data collection
+1 - Without data collection</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="zabbix_cli.cli.zabbixcli.do_create_notification_user">
+<span class="sig-name descname"><span class="pre">do_create_notification_user</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#zabbix_cli.cli.zabbixcli.do_create_notification_user" title="Permalink to this definition">¶</a></dt>
+<dd><p>DESCRIPTION:</p>
+<p>This command creates a notification user. These users can be
+used to send notifications when a zabbix event happens.</p>
+<p>Sometimes we need to send a notification to a place not owned by any
+user in particular, e.g. an email list or jabber channel but Zabbix has
+not the possibility of defining media for a usergroup.</p>
+<p>This is the reason we use <em>notification users</em>. They are users nobody
+owns, but that can be used by other users to send notifications to the
+media defined in the notification user profile.</p>
+<p>Check the parameter <strong>default_notification_users_usergroup</strong> in your
+zabbix-cli configuration file. The usergroup defined here has to
+exists if you want this command to work.</p>
+<p>COMMAND:
+create_notification_user [sendto]</p>
+<blockquote>
+<div><p>[mediatype]
+[remarks]</p>
+</div></blockquote>
+<p>E-mail address, SMS number, jabber address, …</p>
+<p>One of the media types names defined in your Zabbix
+installation, e.g.  Email, SMS, jabber, …</p>
+<p>Comments about this user. e.g. Operations email.
+Max lenght is 20 characters.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="zabbix_cli.cli.zabbixcli.do_create_user">
+<span class="sig-name descname"><span class="pre">do_create_user</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#zabbix_cli.cli.zabbixcli.do_create_user" title="Permalink to this definition">¶</a></dt>
+<dd><p>DESCRIPTION:
+This command creates an user.</p>
+<p>COMMAND:
+create_user [alias]</p>
+<blockquote>
+<div><p>[name]
+[surname]
+[passwd]
+[type]
+[autologin]
+[autologout]
+[groups]</p>
+</div></blockquote>
+<p>User alias (account name)</p>
+<p>Name</p>
+<p>Surname</p>
+<p>Password.</p>
+<p>The system will generate an automatic password if this value
+is not defined.</p>
+<p>1:’User’ [*]
+2:’Admin’
+3:’Super admin’</p>
+<p>0:’Disable’ [*]
+1:’Enable’</p>
+<p>In seconds [86400]</p>
+<p>Usergroup names where this user will be registered.</p>
+<p>One can define several values in a comma separated list.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="zabbix_cli.cli.zabbixcli.do_create_usergroup">
+<span class="sig-name descname"><span class="pre">do_create_usergroup</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#zabbix_cli.cli.zabbixcli.do_create_usergroup" title="Permalink to this definition">¶</a></dt>
+<dd><p>DESCRIPTION:
+This command creates an usergroup.</p>
+<p>COMMAND:
+create_usergroup [group name]</p>
+<blockquote>
+<div><p>[GUI access]
+[Status]</p>
+</div></blockquote>
+<p>Usergroup name</p>
+<p>0:’System default’ [*]
+1:’Internal’
+2:’Disable’</p>
+<p>0:’Enable’ [*]
+1:’Disable’</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="zabbix_cli.cli.zabbixcli.do_define_global_macro">
+<span class="sig-name descname"><span class="pre">do_define_global_macro</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#zabbix_cli.cli.zabbixcli.do_define_global_macro" title="Permalink to this definition">¶</a></dt>
+<dd><p>DESCRIPTION:
+This command defines a global Zabbix macro</p>
+<p>COMMAND:
+define_global_macro [macro name]</p>
+<blockquote>
+<div><p>[macro value]</p>
+</div></blockquote>
+<p>Name of the zabbix macro. The system will format this value to
+use the macro format definition needed by Zabbix.
+e.g. site_url will be converted to ${SITE_URL}</p>
+<p>Default value of the macro</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="zabbix_cli.cli.zabbixcli.do_define_host_monitoring_status">
+<span class="sig-name descname"><span class="pre">do_define_host_monitoring_status</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#zabbix_cli.cli.zabbixcli.do_define_host_monitoring_status" title="Permalink to this definition">¶</a></dt>
+<dd><p>DESCRIPTION:
+This command defines the monitoring status of a host</p>
+<p>COMMAND:
+defines_host_monitoring_status [hostname]</p>
+<blockquote>
+<div><p>[on/off]</p>
+</div></blockquote>
+<p>Hostname that will get the monitoring status updated.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="zabbix_cli.cli.zabbixcli.do_define_host_usermacro">
+<span class="sig-name descname"><span class="pre">do_define_host_usermacro</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#zabbix_cli.cli.zabbixcli.do_define_host_usermacro" title="Permalink to this definition">¶</a></dt>
+<dd><p>DESCRIPTION:
+This command defines a host usermacro</p>
+<p>COMMAND:
+defines_host_usermacro [hostname]</p>
+<blockquote>
+<div><p>[macro name]
+[macro value]</p>
+</div></blockquote>
+<p>Hostname that will get the usermacro locally defined.</p>
+<p>Name of the zabbix macro. The system will format this value to
+use the macro format definition needed by Zabbix.
+e.g. site_url will be converted to ${SITE_URL}</p>
+<p>Default value of the macro</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="zabbix_cli.cli.zabbixcli.do_export_configuration">
+<span class="sig-name descname"><span class="pre">do_export_configuration</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#zabbix_cli.cli.zabbixcli.do_export_configuration" title="Permalink to this definition">¶</a></dt>
+<dd><p>DESCRIPTION:
+This command exports the configuration of different
+Zabbix components to a JSON or XML file. Several
+parameters in the zabbix-cli.conf configuration file
+can be used to control some export options.</p>
+<p>COMMAND:
+export_configuration [export_directory]</p>
+<blockquote>
+<div><p>[object type]
+[object name]</p>
+</div></blockquote>
+<p>Directory where the export files will be saved.</p>
+<p>Possible values: groups, hosts, images, maps, screens, templates
+One can use the special value #all# to export all object type groups.</p>
+<p>Object name or Zabbix-ID. One can define several values in a comma
+separated list.</p>
+<p>One can use the special value #ALL# to export all objects in a object
+type group. This parameter will be defined automatically as #all# if [object type] == #all#</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="zabbix_cli.cli.zabbixcli.do_import_configuration">
+<span class="sig-name descname"><span class="pre">do_import_configuration</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#zabbix_cli.cli.zabbixcli.do_import_configuration" title="Permalink to this definition">¶</a></dt>
+<dd><p>DESCRIPTION:
+This command imports the configuration of a
+Zabbix component.</p>
+<p>We use the options createMissing=True and updateExisting=True
+when importing data. This means that new objects will be
+created if they do not exists and that existing objects will
+be updated if they exist.</p>
+<p>COMMAND:
+import_configuration [import file]</p>
+<blockquote>
+<div><p>[dry run]</p>
+</div></blockquote>
+<p>File with the JSON or XML code to import. This command will
+use the file extension (.json or .xml) to find out the import format.</p>
+<p>This command finds all the pathnames matching a specified
+pattern according to the rules used by the Unix shell.  Tilde
+expansion, <a href="#id1"><span class="problematic" id="id2">*</span></a>, ?, and character ranges expressed with [] will
+be correctly matched. For a literal match, wrap the
+meta-characters in brackets. For example, ‘[?]’ matches the
+character ‘?’.</p>
+<p>If this parameter is used, the command will only show the
+files that would be imported without running the import
+process.</p>
+<p>0: Dry run deactivated
+1: Dry run activated [*]</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="zabbix_cli.cli.zabbixcli.do_link_template_to_host">
+<span class="sig-name descname"><span class="pre">do_link_template_to_host</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#zabbix_cli.cli.zabbixcli.do_link_template_to_host" title="Permalink to this definition">¶</a></dt>
+<dd><p>DESCRIPTION:
+This command links one/several templates to
+one/several hosts</p>
+<p>COMMAND:
+link_template_to_host [templates]</p>
+<blockquote>
+<div><p>[hostnames]</p>
+</div></blockquote>
+<p>Template names or IDs.
+One can define several values in a comma separated list.</p>
+<p>Hostnames or IDs.
+One can define several values in a comma separated list.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="zabbix_cli.cli.zabbixcli.do_load_balance_proxy_hosts">
+<span class="sig-name descname"><span class="pre">do_load_balance_proxy_hosts</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#zabbix_cli.cli.zabbixcli.do_load_balance_proxy_hosts" title="Permalink to this definition">¶</a></dt>
+<dd><p>DESCRIPTION:
+This command will spread hosts evenly along a serie of proxies.</p>
+<p>COMMAND:
+load_balance_proxy_hosts [proxy list]</p>
+<p>[proxy list]:
+Comma delimited list with the proxies that will share the
+monitoring task for a group of hosts.</p>
+<p>The group of hosts is obtained from the hosts assigned to the
+proxies in [proxy list]</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="zabbix_cli.cli.zabbixcli.do_move_proxy_hosts">
+<span class="sig-name descname"><span class="pre">do_move_proxy_hosts</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#zabbix_cli.cli.zabbixcli.do_move_proxy_hosts" title="Permalink to this definition">¶</a></dt>
+<dd><p>DESCRIPTION:
+This command moves all hosts monitored by a proxy (src) to
+another proxy (dst).</p>
+<p>COMMAND:
+move_proxy_hosts [proxy_src]</p>
+<blockquote>
+<div><p>[proxy_dst]</p>
+</div></blockquote>
+<p>Source proxy server.</p>
+<p>Destination proxy server.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="zabbix_cli.cli.zabbixcli.do_quit">
+<span class="sig-name descname"><span class="pre">do_quit</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#zabbix_cli.cli.zabbixcli.do_quit" title="Permalink to this definition">¶</a></dt>
+<dd><p>DESCRIPTION:
+Quits/terminate the Zabbix-CLI shell.</p>
+<p>COMMAND:
+quit</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="zabbix_cli.cli.zabbixcli.do_remove_host">
+<span class="sig-name descname"><span class="pre">do_remove_host</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#zabbix_cli.cli.zabbixcli.do_remove_host" title="Permalink to this definition">¶</a></dt>
+<dd><p>DESCRIPTION:
+This command removes a host.</p>
+<p>COMMAND:
+remove_host [hostname]</p>
+<p>Hostname</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="zabbix_cli.cli.zabbixcli.do_remove_host_from_hostgroup">
+<span class="sig-name descname"><span class="pre">do_remove_host_from_hostgroup</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#zabbix_cli.cli.zabbixcli.do_remove_host_from_hostgroup" title="Permalink to this definition">¶</a></dt>
+<dd><p>DESCRIPTION:
+This command removes one/several hosts from
+one/several hostgroups</p>
+<p>COMMAND:
+remove_host_from_hostgroup [hostnames]</p>
+<blockquote>
+<div><p>[hostgroups]</p>
+</div></blockquote>
+<p>Hostnames or IDs.
+One can define several values in a comma separated list.</p>
+<p>Hostgroup names or IDs.
+One can define several values in a comma separated list.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="zabbix_cli.cli.zabbixcli.do_remove_maintenance_definition">
+<span class="sig-name descname"><span class="pre">do_remove_maintenance_definition</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#zabbix_cli.cli.zabbixcli.do_remove_maintenance_definition" title="Permalink to this definition">¶</a></dt>
+<dd><p>DESCRIPTION:
+This command removes one or several maintenance definitions</p>
+<p>COMMAND:
+remove_maintenance_definitions [definitionID]</p>
+<p>Definition ID. One can define more than one value in a comma
+separated list.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="zabbix_cli.cli.zabbixcli.do_remove_user">
+<span class="sig-name descname"><span class="pre">do_remove_user</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#zabbix_cli.cli.zabbixcli.do_remove_user" title="Permalink to this definition">¶</a></dt>
+<dd><p>DESCRIPTION:
+This command removes an user.</p>
+<p>COMMAND:
+remove_user [username]</p>
+<p>Username to remove</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="zabbix_cli.cli.zabbixcli.do_remove_user_from_usergroup">
+<span class="sig-name descname"><span class="pre">do_remove_user_from_usergroup</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#zabbix_cli.cli.zabbixcli.do_remove_user_from_usergroup" title="Permalink to this definition">¶</a></dt>
+<dd><p>DESCRIPTION:
+This command removes an user from
+one/several usergroups</p>
+<p>COMMAND:
+remove_user_to_usergroup [username]</p>
+<blockquote>
+<div><p>[usergroups]</p>
+</div></blockquote>
+<p>Username to remove</p>
+<p>Usergroup names from where the username will be removed.  One
+can define several values in a comma separated list.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="zabbix_cli.cli.zabbixcli.do_shell">
+<span class="sig-name descname"><span class="pre">do_shell</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#zabbix_cli.cli.zabbixcli.do_shell" title="Permalink to this definition">¶</a></dt>
+<dd><p>DESCRIPTION:
+This command runs a command in the operative system</p>
+<p>COMMAND:
+shell [command]</p>
+<p>Any command that can be run in the operative system.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="zabbix_cli.cli.zabbixcli.do_show_alarms">
+<span class="sig-name descname"><span class="pre">do_show_alarms</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#zabbix_cli.cli.zabbixcli.do_show_alarms" title="Permalink to this definition">¶</a></dt>
+<dd><p>DESCRIPTION:</p>
+<p>This command shows all active alarms with the last event
+unacknowledged.</p>
+<p>COMMAND:
+show_alarms [description]</p>
+<blockquote>
+<div><p>[filters]
+[hostgroups]
+[Last event unacknowledged]</p>
+</div></blockquote>
+<p>Type of alarm description to search for. Leave this parameter
+empty to search for all descriptions. One can also use wildcards.</p>
+<p>One can filter the result by host and priority. No wildcards
+can be used.</p>
+<p>Priority values:</p>
+<p>0 - (default) not classified;
+1 - information;
+2 - warning;
+3 - average;
+4 - high;
+5 - disaster.</p>
+<p>One can filter the result to get alarms from a particular
+hostgroup or group og hostgroups. One can define several
+values in a comma separated list.</p>
+<p>One can filter the result after the acknowledged value of the
+last event of an alarm.</p>
+<p>Values:</p>
+<p>true - (default) Show only active alarms with last event unacknowledged.
+false - Show all active alarms, also those with the last event acknowledged.</p>
+<dl class="simple">
+<dt>e.g.: Get all alarms with priority ‘High’ that contain the word</dt><dd><p>‘disk’ in the description for the host ‘host.example.org’ and
+the last event unacknowledged</p>
+</dd>
+</dl>
+<p>show_alarms <em>disk</em> “‘host’:’host.example.org’,’priority’:’4’” * true</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="zabbix_cli.cli.zabbixcli.do_show_global_macros">
+<span class="sig-name descname"><span class="pre">do_show_global_macros</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#zabbix_cli.cli.zabbixcli.do_show_global_macros" title="Permalink to this definition">¶</a></dt>
+<dd><p>DESCRIPTION:
+This command shows all global macros</p>
+<p>COMMAND:
+show global_macros</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="zabbix_cli.cli.zabbixcli.do_show_history">
+<span class="sig-name descname"><span class="pre">do_show_history</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#zabbix_cli.cli.zabbixcli.do_show_history" title="Permalink to this definition">¶</a></dt>
+<dd><p>DESCRIPTION:
+This command shows the list of commands that have been entered
+during the Zabbix-CLI shell session.</p>
+<p>COMMAND:
+show_history</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="zabbix_cli.cli.zabbixcli.do_show_host">
+<span class="sig-name descname"><span class="pre">do_show_host</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#zabbix_cli.cli.zabbixcli.do_show_host" title="Permalink to this definition">¶</a></dt>
+<dd><p>DESCRIPTION:
+This command shows hosts information</p>
+<p>COMMAND:
+show_host [HostID / Hostname]</p>
+<blockquote>
+<div><p>[Filter]</p>
+</div></blockquote>
+<p>One can search by HostID or by Hostname. One can use wildcards
+if we search by Hostname</p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Zabbix agent: ‘available’: 0=Unknown</dt><dd><p>1=Available
+2=Unavailable</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Maintenance: ‘maintenance_status’: 0:No maintenance</dt><dd><p>1:In progress</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Status: ‘status’: 0:Monitored</dt><dd><p>1: Not monitored</p>
+</dd>
+</dl>
+</li>
+</ul>
+<dl class="simple">
+<dt>e.g.: Show all hosts with Zabbix agent: Available AND Status: Monitored:</dt><dd><p>show_host * “‘available’:’1’,’status’:’0’”</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="zabbix_cli.cli.zabbixcli.do_show_host_inventory">
+<span class="sig-name descname"><span class="pre">do_show_host_inventory</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#zabbix_cli.cli.zabbixcli.do_show_host_inventory" title="Permalink to this definition">¶</a></dt>
+<dd><p>DESCRIPTION:
+This command shows hosts inventory</p>
+<p>COMMAND:
+show_host_inventory [Hostname]</p>
+<p>Hostname.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="zabbix_cli.cli.zabbixcli.do_show_host_usermacros">
+<span class="sig-name descname"><span class="pre">do_show_host_usermacros</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#zabbix_cli.cli.zabbixcli.do_show_host_usermacros" title="Permalink to this definition">¶</a></dt>
+<dd><p>DESCRIPTION:
+This command shows all usermacros for a host</p>
+<p>COMMAND:
+show_host_usermacros [hostname]</p>
+<p>Hostname</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="zabbix_cli.cli.zabbixcli.do_show_hostgroup">
+<span class="sig-name descname"><span class="pre">do_show_hostgroup</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#zabbix_cli.cli.zabbixcli.do_show_hostgroup" title="Permalink to this definition">¶</a></dt>
+<dd><p>DESCRIPTION:
+This command shows hostgroup information</p>
+<p>COMMAND:
+show_hostgroup [hostgroup]</p>
+<p>Hostgroup name. One can use wildcards.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="zabbix_cli.cli.zabbixcli.do_show_hostgroup_permissions">
+<span class="sig-name descname"><span class="pre">do_show_hostgroup_permissions</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#zabbix_cli.cli.zabbixcli.do_show_hostgroup_permissions" title="Permalink to this definition">¶</a></dt>
+<dd><p>DESCRIPTION:
+This command shows which usergroups has access to a hostgroup</p>
+<p>COMMAND:
+show_hostgroup_permissions [hostgroup]</p>
+<p>Hostgroup name. One can use wildcards.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="zabbix_cli.cli.zabbixcli.do_show_hostgroups">
+<span class="sig-name descname"><span class="pre">do_show_hostgroups</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#zabbix_cli.cli.zabbixcli.do_show_hostgroups" title="Permalink to this definition">¶</a></dt>
+<dd><p>DESCRIPTION:
+This command shows all hostgroups defined in the system.</p>
+<p>COMMAND:
+show_hostgroups</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="zabbix_cli.cli.zabbixcli.do_show_hosts">
+<span class="sig-name descname"><span class="pre">do_show_hosts</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#zabbix_cli.cli.zabbixcli.do_show_hosts" title="Permalink to this definition">¶</a></dt>
+<dd><p>DESCRIPTION:
+This command shows all hosts defined in the system.</p>
+<p>COMMAND:
+show_hosts</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="zabbix_cli.cli.zabbixcli.do_show_items">
+<span class="sig-name descname"><span class="pre">do_show_items</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#zabbix_cli.cli.zabbixcli.do_show_items" title="Permalink to this definition">¶</a></dt>
+<dd><p>DESCRIPTION:
+This command shows items that belong to a template</p>
+<p>COMMAND:
+show_items [template]</p>
+<p>Template name or zabbix-templateID</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="zabbix_cli.cli.zabbixcli.do_show_last_values">
+<span class="sig-name descname"><span class="pre">do_show_last_values</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#zabbix_cli.cli.zabbixcli.do_show_last_values" title="Permalink to this definition">¶</a></dt>
+<dd><p>DESCRIPTION:
+Shows the last values of given item.</p>
+<p>COMMAND:
+show_last_values [item_name]</p>
+<blockquote>
+<div><p>[group]</p>
+</div></blockquote>
+<p>Name of the items to get. Supports wildcard.</p>
+<p>[group]
+Whether the output should group items with the same values.</p>
+<p>0 - (default) Do not group items.
+1 - Group items.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="zabbix_cli.cli.zabbixcli.do_show_maintenance_definitions">
+<span class="sig-name descname"><span class="pre">do_show_maintenance_definitions</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#zabbix_cli.cli.zabbixcli.do_show_maintenance_definitions" title="Permalink to this definition">¶</a></dt>
+<dd><p>DESCRIPTION:
+This command shows maintenance definitions global
+information. The logical operator AND will be used if one
+defines more than one parameter.</p>
+<p>COMMAND:
+show_maintenance_definitions [definitionID]</p>
+<blockquote>
+<div><p>[hostgroup]
+[host]</p>
+</div></blockquote>
+<p>Definition ID. One can define more than one value.</p>
+<p>Hostgroup name. One can define more than one value.</p>
+<p>Hostname. One can define more than one value.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="zabbix_cli.cli.zabbixcli.do_show_maintenance_periods">
+<span class="sig-name descname"><span class="pre">do_show_maintenance_periods</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#zabbix_cli.cli.zabbixcli.do_show_maintenance_periods" title="Permalink to this definition">¶</a></dt>
+<dd><p>DESCRIPTION:
+This command shows maintenance periods global information.</p>
+<p>COMMAND: show_maintenance_periods [definitionID]</p>
+<p>Definition ID. One can define more than one value.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="zabbix_cli.cli.zabbixcli.do_show_template">
+<span class="sig-name descname"><span class="pre">do_show_template</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#zabbix_cli.cli.zabbixcli.do_show_template" title="Permalink to this definition">¶</a></dt>
+<dd><p>DESCRIPTION
+This command show templates information</p>
+<p>COMMAND:
+show_template [Template name]</p>
+<p>One can search by template name. We can use wildcards.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="zabbix_cli.cli.zabbixcli.do_show_templates">
+<span class="sig-name descname"><span class="pre">do_show_templates</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#zabbix_cli.cli.zabbixcli.do_show_templates" title="Permalink to this definition">¶</a></dt>
+<dd><p>DESCRIPTION:
+This command shows all templates defined in the system.</p>
+<p>COMMAND:
+show_templates</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="zabbix_cli.cli.zabbixcli.do_show_trigger_events">
+<span class="sig-name descname"><span class="pre">do_show_trigger_events</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#zabbix_cli.cli.zabbixcli.do_show_trigger_events" title="Permalink to this definition">¶</a></dt>
+<dd><p>DESCRIPTION:</p>
+<p>This command shows the events generated by a trigger.</p>
+<p>COMMAND:
+show_trigger_events [triggerID]</p>
+<blockquote>
+<div><p>[count]</p>
+</div></blockquote>
+<p>ID of the trigger we want tho show.</p>
+<p>Number of events to show (Default: 1)</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="zabbix_cli.cli.zabbixcli.do_show_triggers">
+<span class="sig-name descname"><span class="pre">do_show_triggers</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#zabbix_cli.cli.zabbixcli.do_show_triggers" title="Permalink to this definition">¶</a></dt>
+<dd><p>DESCRIPTION:
+This command shows triggers that belong to a template</p>
+<p>COMMAND:
+show_triggers [template]</p>
+<p>Template name or zabbix-templateID</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="zabbix_cli.cli.zabbixcli.do_show_usergroup">
+<span class="sig-name descname"><span class="pre">do_show_usergroup</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#zabbix_cli.cli.zabbixcli.do_show_usergroup" title="Permalink to this definition">¶</a></dt>
+<dd><p>DESCRIPTION:
+This command shows user group information.</p>
+<p>COMMAND:
+show_usergroup [usergroup]</p>
+<p>User group name. One can use wildcards.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="zabbix_cli.cli.zabbixcli.do_show_usergroup_permissions">
+<span class="sig-name descname"><span class="pre">do_show_usergroup_permissions</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#zabbix_cli.cli.zabbixcli.do_show_usergroup_permissions" title="Permalink to this definition">¶</a></dt>
+<dd><p>DESCRIPTION
+This command show usergroup permissions information</p>
+<p>COMMAND:
+show_usergroup_permissions [usergroup]</p>
+<p>Usergroup that will be displayed.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="zabbix_cli.cli.zabbixcli.do_show_usergroups">
+<span class="sig-name descname"><span class="pre">do_show_usergroups</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#zabbix_cli.cli.zabbixcli.do_show_usergroups" title="Permalink to this definition">¶</a></dt>
+<dd><p>DESCRIPTION:
+This command shows all usergroups defined in the system.</p>
+<p>COMMAND:
+show_usergroups</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="zabbix_cli.cli.zabbixcli.do_show_usermacro_host_list">
+<span class="sig-name descname"><span class="pre">do_show_usermacro_host_list</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#zabbix_cli.cli.zabbixcli.do_show_usermacro_host_list" title="Permalink to this definition">¶</a></dt>
+<dd><p>DESCRIPTION:
+This command shows all host with a defined usermacro</p>
+<p>COMMAND:
+show_usermacro_host_list [usermacro]</p>
+<p>Usermacro name. The system will format this value to use the
+macro format definition needed by Zabbix.  e.g. site_url will be
+converted to ${SITE_URL}</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="zabbix_cli.cli.zabbixcli.do_show_usermacro_template_list">
+<span class="sig-name descname"><span class="pre">do_show_usermacro_template_list</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#zabbix_cli.cli.zabbixcli.do_show_usermacro_template_list" title="Permalink to this definition">¶</a></dt>
+<dd><p>DESCRIPTION:
+This command shows all templates with a defined macro</p>
+<p>COMMAND:
+show_usermacro_template_list [usermacro]</p>
+<p>Usermacro name. The system will format this value to use the
+macro format definition needed by Zabbix.  e.g. site_url will be
+converted to ${SITE_URL}</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="zabbix_cli.cli.zabbixcli.do_show_users">
+<span class="sig-name descname"><span class="pre">do_show_users</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#zabbix_cli.cli.zabbixcli.do_show_users" title="Permalink to this definition">¶</a></dt>
+<dd><p>DESCRIPTION:
+This command shows users information.</p>
+<p>COMMAND:
+show_users</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="zabbix_cli.cli.zabbixcli.do_show_zabbixcli_config">
+<span class="sig-name descname"><span class="pre">do_show_zabbixcli_config</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#zabbix_cli.cli.zabbixcli.do_show_zabbixcli_config" title="Permalink to this definition">¶</a></dt>
+<dd><p>DESCRIPTION:
+This command shows information about the
+configuration used by this zabbix-cli instance.</p>
+<p>COMMAND:
+show_zabbixcli_config</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="zabbix_cli.cli.zabbixcli.do_unlink_template_from_host">
+<span class="sig-name descname"><span class="pre">do_unlink_template_from_host</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#zabbix_cli.cli.zabbixcli.do_unlink_template_from_host" title="Permalink to this definition">¶</a></dt>
+<dd><p>DESCRIPTION:
+This command unlink one/several templates from
+one/several hosts</p>
+<p>COMMAND:
+unlink_template_from_host [templates]</p>
+<blockquote>
+<div><p>[hostnames]</p>
+</div></blockquote>
+<p>Templates names or IDs.
+One can define several values in a comma separated list.</p>
+<p>Hostnames or IDs.
+One can define several values in a comma separated list.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="zabbix_cli.cli.zabbixcli.do_update_host_inventory">
+<span class="sig-name descname"><span class="pre">do_update_host_inventory</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#zabbix_cli.cli.zabbixcli.do_update_host_inventory" title="Permalink to this definition">¶</a></dt>
+<dd><p>DESCRIPTION:
+This command updates one hosts’ inventory</p>
+<p>COMMAND:
+update_host_inventory [hostname]</p>
+<blockquote>
+<div><p>[inventory_key]
+[inventory value]</p>
+</div></blockquote>
+<p>Inventory key is not the same as seen in web-gui. To
+look at possible keys and their current values, use
+“zabbix-cli –use-json-format show_host_inventory &lt;hostname&gt;”</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="zabbix_cli.cli.zabbixcli.do_update_host_proxy">
+<span class="sig-name descname"><span class="pre">do_update_host_proxy</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#zabbix_cli.cli.zabbixcli.do_update_host_proxy" title="Permalink to this definition">¶</a></dt>
+<dd><p>DESCRIPTION:
+This command defines the proxy used to monitor a host</p>
+<p>COMMAND:
+update_host_proxy [hostname]</p>
+<blockquote>
+<div><p>[proxy]</p>
+</div></blockquote>
+<p>Hostname to update</p>
+<p>Zabbix proxy server that will monitor [hostname]</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="zabbix_cli.cli.zabbixcli.do_update_usergroup_permissions">
+<span class="sig-name descname"><span class="pre">do_update_usergroup_permissions</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#zabbix_cli.cli.zabbixcli.do_update_usergroup_permissions" title="Permalink to this definition">¶</a></dt>
+<dd><p>DESCRIPTION:
+This command updates the permissions for an usergroup
+on a hostgroup.</p>
+<p>COMMAND:
+define_usergroup_permissions [usergroup]</p>
+<blockquote>
+<div><p>[hostgroups]
+[permission code]</p>
+</div></blockquote>
+<p>Usergroup that will get a permission on a hostgroup</p>
+<p>Hostgroup names where the permission will apply.</p>
+<p>One can define several values in a comma separated list.</p>
+<ul class="simple">
+<li><p>deny: Deny [usergroup] all access to [hostgroups]</p></li>
+<li><p>ro: Give [usergroup] read access to [hostgroups]</p></li>
+<li><p>rw: Give [usergroup] read and write access to [hostgroups]</p></li>
+</ul>
+</dd></dl>
+
+</dd></dl>
+
 </section>
 <section id="authors">
-<h2><a class="toc-backref" href="#id11">Authors</a><a class="headerlink" href="#authors" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id13">Authors</a><a class="headerlink" href="#authors" title="Permalink to this headline">¶</a></h2>
 <p>In alphabetical order:</p>
 <div class="line-block">
 <div class="line"><br /></div>
@@ -385,7 +1313,7 @@ or special characters for the shell.e.g.</p>
 </div>
 </section>
 <section id="license-and-contributions">
-<h2><a class="toc-backref" href="#id12">License and Contributions</a><a class="headerlink" href="#license-and-contributions" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id14">License and Contributions</a><a class="headerlink" href="#license-and-contributions" title="Permalink to this headline">¶</a></h2>
 <p>Zabbix-CLI is the property of USIT-University of Oslo, and its code is
 distributed under GNU General Public License 3.</p>
 <div class="line-block">
