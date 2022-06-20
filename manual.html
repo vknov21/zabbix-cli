@@ -967,12 +967,14 @@ empty to search for all descriptions. One can also use wildcards.</p>
 <p>One can filter the result by host and priority. No wildcards
 can be used.</p>
 <p>Priority values:</p>
-<p>0 - (default) not classified;
-1 - information;
-2 - warning;
-3 - average;
-4 - high;
-5 - disaster.</p>
+<ol class="arabic simple" start="0">
+<li><p>(default) not classified;</p></li>
+<li><p>information;</p></li>
+<li><p>warning;</p></li>
+<li><p>average;</p></li>
+<li><p>high;</p></li>
+<li><p>disaster.</p></li>
+</ol>
 <p class="rubric">[hostgroups]</p>
 <p>One can filter the result to get alarms from a particular
 hostgroup or group og hostgroups. One can define several
@@ -981,14 +983,16 @@ values in a comma separated list.</p>
 <p>One can filter the result after the acknowledged value of the
 last event of an alarm.</p>
 <p>Values:</p>
-<p>true - (default) Show only active alarms with last event unacknowledged.
-false - Show all active alarms, also those with the last event acknowledged.</p>
-<dl class="simple">
-<dt>e.g.: Get all alarms with priority ‘High’ that contain the word</dt><dd><p>‘disk’ in the description for the host ‘host.example.org’ and
-the last event unacknowledged</p>
-</dd>
-</dl>
-<p>show_alarms <em>disk</em> “‘host’:’host.example.org’,’priority’:’4’” * true</p>
+<ul class="simple">
+<li><p>true - (default) Show only active alarms with last event unacknowledged.</p></li>
+<li><p>false - Show all active alarms, also those with the last event acknowledged.</p></li>
+</ul>
+<p>e.g.: Get all alarms with priority <code class="docutils literal notranslate"><span class="pre">High</span></code> that contain the word
+<code class="docutils literal notranslate"><span class="pre">disk</span></code> in the description for the host <code class="docutils literal notranslate"><span class="pre">host.example.org</span></code> and
+the last event unacknowledged:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">show_alarms</span> <span class="o">*</span><span class="n">disk</span><span class="o">*</span> <span class="s2">&quot;&#39;host&#39;:&#39;host.example.org&#39;,&#39;priority&#39;:&#39;4&#39;&quot;</span> <span class="o">*</span> <span class="n">true</span>
+</pre></div>
+</div>
 </dd></dl>
 
 <dl class="py method">
