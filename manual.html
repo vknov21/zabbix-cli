@@ -543,13 +543,17 @@ default interface of type ‘Agent’ using the port 10050.</p>
 <p class="rubric">[hostname]</p>
 <p>Hostname</p>
 <p class="rubric">[interface connection]</p>
-<p>0: Connect using host DNS name or interface DNS if provided [*]
-1: Connect using host IP address</p>
+<ol class="arabic simple" start="0">
+<li><p>Connect using host DNS name or interface DNS if provided [*]</p></li>
+<li><p>Connect using host IP address</p></li>
+</ol>
 <p class="rubric">[interface type]</p>
-<p>1: Zabbix agent
-2: SNMP [*]
-3: IPMI
-4: JMX</p>
+<ol class="arabic simple">
+<li><p>Zabbix agent</p></li>
+<li><p>SNMP [*]</p></li>
+<li><p>IPMI</p></li>
+<li><p>JMX</p></li>
+</ol>
 <p class="rubric">[interface port]</p>
 <p>Interface port [161]</p>
 <p class="rubric">[interface IP]</p>
@@ -557,8 +561,10 @@ default interface of type ‘Agent’ using the port 10050.</p>
 <p class="rubric">[interface DNS]</p>
 <p>DNS if interface connection is 0: (hostname by default)</p>
 <p class="rubric">[default interface]</p>
-<p>0: Not default interface
-1: Default interface [*]</p>
+<ol class="arabic simple" start="0">
+<li><p>Not default interface</p></li>
+<li><p>Default interface [*]</p></li>
+</ol>
 </dd></dl>
 
 <dl class="py method">
@@ -662,12 +668,16 @@ Max lenght is 20 characters.</p>
 <p>The system will generate an automatic password if this value
 is not defined.</p>
 <p class="rubric">[type]</p>
-<p>1:’User’ [*]
-2:’Admin’
-3:’Super admin’</p>
+<ol class="arabic simple">
+<li><p>‘User’ [*]</p></li>
+<li><p>‘Admin’</p></li>
+<li><p>‘Super admin’</p></li>
+</ol>
 <p class="rubric">[autologin]</p>
-<p>0:’Disable’ [*]
-1:’Enable’</p>
+<ol class="arabic simple" start="0">
+<li><p>‘Disable’ [*]</p></li>
+<li><p>‘Enable’</p></li>
+</ol>
 <p class="rubric">[autologout]</p>
 <p>In seconds [86400]</p>
 <p class="rubric">[groups]</p>
@@ -794,8 +804,10 @@ character ‘?’.</p>
 <p>If this parameter is used, the command will only show the
 files that would be imported without running the import
 process.</p>
-<p>0: Dry run deactivated
-1: Dry run activated [*]</p>
+<ol class="arabic simple" start="0">
+<li><p>Dry run deactivated</p></li>
+<li><p>Dry run activated [*]</p></li>
+</ol>
 </dd></dl>
 
 <dl class="py method">
@@ -1005,27 +1017,30 @@ during the Zabbix-CLI shell session.</p>
 if we search by Hostname</p>
 <p class="rubric">[Filter]:</p>
 <ul class="simple">
-<li><dl class="simple">
-<dt>Zabbix agent: ‘available’: 0=Unknown</dt><dd><p>1=Available
-2=Unavailable</p>
-</dd>
-</dl>
+<li><p>Zabbix agent: <em>available</em>:</p>
+<ol class="arabic simple" start="0">
+<li><p>Unknown</p></li>
+<li><p>Available</p></li>
+<li><p>Unavailable</p></li>
+</ol>
 </li>
-<li><dl class="simple">
-<dt>Maintenance: ‘maintenance_status’: 0:No maintenance</dt><dd><p>1:In progress</p>
-</dd>
-</dl>
+<li><p>Maintenance: <em>maintenance_status</em>:</p>
+<ol class="arabic simple" start="0">
+<li><p>No maintenance</p></li>
+<li><p>In progress</p></li>
+</ol>
 </li>
-<li><dl class="simple">
-<dt>Status: ‘status’: 0:Monitored</dt><dd><p>1: Not monitored</p>
-</dd>
-</dl>
+<li><p>Status: <em>status</em>:</p>
+<ol class="arabic simple" start="0">
+<li><p>Monitored</p></li>
+<li><p>Not monitored</p></li>
+</ol>
 </li>
 </ul>
-<dl class="simple">
-<dt>e.g.: Show all hosts with Zabbix agent: Available AND Status: Monitored:</dt><dd><p>show_host * “‘available’:’1’,’status’:’0’”</p>
-</dd>
-</dl>
+<p>e.g.: Show all hosts with Zabbix agent: Available AND Status: Monitored:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">show_host</span> <span class="o">*</span> <span class="s2">&quot;&#39;available&#39;:&#39;1&#39;,&#39;status&#39;:&#39;0&#39;&quot;</span>
+</pre></div>
+</div>
 </dd></dl>
 
 <dl class="py method">
