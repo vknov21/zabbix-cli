@@ -676,6 +676,7 @@ is not defined.</p>
 <li><p>‘User’ [*]</p></li>
 <li><p>‘Admin’</p></li>
 <li><p>‘Super admin’</p></li>
+<li><p>‘Guest’</p></li>
 </ol>
 <p class="rubric">[autologin]</p>
 <ol class="arabic simple" start="0">
@@ -832,6 +833,23 @@ one/several hosts</p>
 One can define several values in a comma separated list.</p>
 <p class="rubric">[hostnames]</p>
 <p>Hostnames or IDs.
+One can define several values in a comma separated list.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="zabbix_cli.cli.zabbixcli.do_link_template_to_hostgroup">
+<span class="sig-name descname"><span class="pre">do_link_template_to_hostgroup</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#zabbix_cli.cli.zabbixcli.do_link_template_to_hostgroup" title="Permalink to this definition">¶</a></dt>
+<dd><p>This command links one/several templates to
+one/several hostgroups</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">link_template_to_hostgroup</span> <span class="p">[</span><span class="n">templates</span><span class="p">]</span>
+                           <span class="p">[</span><span class="n">hostgroups</span><span class="p">]</span>
+</pre></div>
+</div>
+<p class="rubric">[templates]</p>
+<p>Template names or IDs.
+One can define several values in a comma separated list.</p>
+<p class="rubric">[hostgroups]</p>
+<p>Hostgroups or IDs.
 One can define several values in a comma separated list.</p>
 </dd></dl>
 
@@ -1315,6 +1333,23 @@ One can define several values in a comma separated list.</p>
 </dd></dl>
 
 <dl class="py method">
+<dt class="sig sig-object py" id="zabbix_cli.cli.zabbixcli.do_unlink_template_from_hostgroup">
+<span class="sig-name descname"><span class="pre">do_unlink_template_from_hostgroup</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#zabbix_cli.cli.zabbixcli.do_unlink_template_from_hostgroup" title="Permalink to this definition">¶</a></dt>
+<dd><p>This command unlink one/several templates from
+one/several hostgroups</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">unlink_template_from_hostgroup</span> <span class="p">[</span><span class="n">templates</span><span class="p">]</span>
+                               <span class="p">[</span><span class="n">hostgroups</span><span class="p">]</span>
+</pre></div>
+</div>
+<p class="rubric">[templates]</p>
+<p>Templates names or IDs.
+One can define several values in a comma separated list.</p>
+<p class="rubric">[hostgroups]</p>
+<p>Hostgroups or IDs.
+One can define several values in a comma separated list.</p>
+</dd></dl>
+
+<dl class="py method">
 <dt class="sig sig-object py" id="zabbix_cli.cli.zabbixcli.do_update_host_inventory">
 <span class="sig-name descname"><span class="pre">do_update_host_inventory</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#zabbix_cli.cli.zabbixcli.do_update_host_inventory" title="Permalink to this definition">¶</a></dt>
 <dd><p>This command updates one hosts’ inventory</p>
@@ -1340,6 +1375,25 @@ look at possible keys and their current values, use
 <p>Hostname to update</p>
 <p class="rubric">[proxy]</p>
 <p>Zabbix proxy server that will monitor [hostname]</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="zabbix_cli.cli.zabbixcli.do_update_template_groups">
+<span class="sig-name descname"><span class="pre">do_update_template_groups</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#zabbix_cli.cli.zabbixcli.do_update_template_groups" title="Permalink to this definition">¶</a></dt>
+<dd><p>This command changes the group memberships of a template.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">update_template_groups</span> <span class="p">[</span><span class="n">template</span><span class="p">]</span>
+                       <span class="p">[</span><span class="n">groups_to_remove</span><span class="p">]</span>
+                       <span class="p">[</span><span class="n">groups_to_add</span><span class="p">]</span>
+</pre></div>
+</div>
+<p class="rubric">[template]</p>
+<p>The template to change.</p>
+<p class="rubric">[groups_to_remove]</p>
+<p>The groups to remove.  Can be empty.</p>
+<p>One can define several values in a comma separated list.</p>
+<p class="rubric">[groups_to_add]</p>
+<p>The groups to add.  Can be empty.</p>
+<p>One can define several values in a comma separated list.</p>
 </dd></dl>
 
 <dl class="py method">
