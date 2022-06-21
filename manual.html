@@ -70,8 +70,8 @@
 </nav>
 <section id="introduction">
 <h2><a class="toc-backref" href="#id2" role="doc-backlink">Introduction</a><a class="headerlink" href="#introduction" title="Permalink to this heading">¶</a></h2>
-<p>Zabbix-cli is a terminal client for managing some Zabbix
-administration tasks via the zabbix-API.</p>
+<p>Zabbix-cli is a terminal client for managing Zabbix
+administration tasks via the Zabbix API.</p>
 <p>The zabbix-cli code is distributed under the GNU General Public
 License 3 and it is written in Python. It has been developed and
 tested by members of the Department for IT Infrastructure at the
@@ -98,7 +98,7 @@ support for autologin.</p></li>
 <section id="configuration-file">
 <h3><a class="toc-backref" href="#id5" role="doc-backlink">Configuration file</a><a class="headerlink" href="#configuration-file" title="Permalink to this heading">¶</a></h3>
 <p>Zabbix-cli has a <strong>multilevel configuration system.</strong></p>
-<p>This means thet we do not override entire configuration files but we
+<p>This means that we do not override entire configuration files but we
 merge all the defined configuration files in our system and use the
 parameter values defined in the configuration file with higher
 priority if a parameter is defined in more than one file.</p>
@@ -189,7 +189,7 @@ in non-interactive modus from scripts or automated jobs.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">USERNAME</span><span class="p">::</span><span class="n">PASSWORD</span>
 </pre></div>
 </div>
-<p><strong>NOTE:</strong> The password will be saved in clear text so be carefull with the information saved here and restrict access to this file only to your user. <code class="docutils literal notranslate"><span class="pre">chmod</span> <span class="pre">400</span> <span class="pre">~/.zabbix-cli_auth</span></code> will be defined by <code class="docutils literal notranslate"><span class="pre">zabbix-cli</span></code> on this file the first time it uses it.</p>
+<p><strong>NOTE:</strong> The password will be saved in clear text so be careful with the information saved here and restrict access to this file only to your user. <code class="docutils literal notranslate"><span class="pre">chmod</span> <span class="pre">400</span> <span class="pre">~/.zabbix-cli_auth</span></code> will be defined by <code class="docutils literal notranslate"><span class="pre">zabbix-cli</span></code> on this file the first time it uses it.</p>
 </section>
 <section id="authentication-token-file">
 <h3><a class="toc-backref" href="#id8" role="doc-backlink">Authentication token file</a><a class="headerlink" href="#authentication-token-file" title="Permalink to this heading">¶</a></h3>
@@ -261,7 +261,7 @@ Miscellaneous help topics:
 shortcuts  support
 </pre></div>
 </div>
-<p><strong>NOTE:</strong> It is possible to use Zabbix-CLI in a non-interactive modus
+<p><strong>NOTE:</strong> It is possible to use Zabbix-CLI in a non-interactive mode
 by running <code class="docutils literal notranslate"><span class="pre">/usr/bin/zabbix-cli</span></code> with the parameter <code class="docutils literal notranslate"><span class="pre">--command</span>
 <span class="pre">&lt;zabbix_command&gt;</span></code> or <code class="docutils literal notranslate"><span class="pre">-C</span> <span class="pre">&lt;zabbix_command&gt;</span></code> in the OS shell. This
 can be used to run <code class="docutils literal notranslate"><span class="pre">zabbix-cli</span></code> commands from shell scripts or other
@@ -336,8 +336,8 @@ modus to generate an output in CSV or JSON format.</p>
 </pre></div>
 </div>
 <p>Remember that you have to use <code class="docutils literal notranslate"><span class="pre">&quot;&quot;</span></code> and escape some characters if
-running commands in non-interactive modus with parameters that have spaces
-or special characters for the shell.e.g.</p>
+running commands in non-interactive mode with parameters that have spaces
+or special characters for the shell, .e.g.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">user</span><span class="nd">@host</span> <span class="o">~</span><span class="p">]</span><span class="c1"># zabbix-cli -C &quot;show_host * \&quot;&#39;available&#39;:&#39;2&#39;,&#39;maintenance_status&#39;:&#39;1&#39;\&quot; &quot;</span>
 
 <span class="o">+--------+----------------------+-------------------------+-----------------------------------+--------------------+-----------------+-----------------+---------------+</span>
