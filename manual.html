@@ -4,7 +4,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
     <title>zabbix-cli 2.3.0 documentation</title>
     <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
@@ -15,6 +15,7 @@
     <script src="_static/underscore.js"></script>
     <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="_static/doctools.js"></script>
+    <script src="_static/sphinx_highlight.js"></script>
     <script src="_static/js/manual.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -468,9 +469,9 @@ nothing will be changed.</p>
 <p>One can define several values in a comma separated list.</p>
 <p class="rubric">[permission]</p>
 <ul class="simple">
-<li><p>deny: Deny [usergroup] all access to [hostgroups]</p></li>
-<li><p>ro: Give [usergroup] read access to [hostgroups]</p></li>
-<li><p>rw: Give [usergroup] read and write access to [hostgroups]</p></li>
+<li><p><strong>deny</strong>: Deny <code class="docutils literal notranslate"><span class="pre">[usergroup]</span></code> all access to <code class="docutils literal notranslate"><span class="pre">[hostgroups]</span></code></p></li>
+<li><p><strong>ro</strong>: Give <code class="docutils literal notranslate"><span class="pre">[usergroup]</span></code> read access to <code class="docutils literal notranslate"><span class="pre">[hostgroups]</span></code></p></li>
+<li><p><strong>rw</strong>: Give <code class="docutils literal notranslate"><span class="pre">[usergroup]</span></code> read and write access to <code class="docutils literal notranslate"><span class="pre">[hostgroups]</span></code></p></li>
 </ul>
 </dd></dl>
 
@@ -499,10 +500,10 @@ nothing will be changed.</p>
 <p>Hostgroup names or IDs. One can define several values in a
 comma separated list.</p>
 <p>Remember that the host will get added to all hostgroups
-defined with the parameter ‘default_hostgroup’ in the
-zabbix-cli configuration file ‘zabbix-cli.conf’</p>
-<p>This command will fail if both ‘default_hostgroup’ and
-[hostgroups] are empty.</p>
+defined with the parameter <code class="docutils literal notranslate"><span class="pre">default_hostgroup</span></code> in the
+zabbix-cli configuration file <code class="docutils literal notranslate"><span class="pre">zabbix-cli.conf</span></code>.</p>
+<p>This command will fail if both <code class="docutils literal notranslate"><span class="pre">default_hostgroup</span></code> and
+<code class="docutils literal notranslate"><span class="pre">[hostgroups]</span></code> are empty.</p>
 <p class="rubric">[proxy]</p>
 <p>Proxy server used to monitor this host. One can use regular
 expressions to define a group of proxy servers from where the
@@ -511,13 +512,15 @@ system will choose a random proxy.</p>
 random proxy from the list of all available proxies.</p>
 <p>If the system does not have proxy servers defined, the new
 host will be monitor by the Zabbix-server.</p>
-<p>e.g. Some regular expressions that can be used:</p>
-<ul class="simple">
-<li><p>proxy-(prod|test)+d.example.org
-e.g. proxy-prod1.example.org and proxy-test8.example.org
-will match this expression.</p></li>
-<li><p>.+
-All proxies will match this expression.</p></li>
+<p>Some regular expressions that can be used:</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">proxy-(prod|test)+d\.example\.org</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">proxy-prod1.example.org</span></code> and <code class="docutils literal notranslate"><span class="pre">proxy-test8.example.org</span></code>
+will match this expression.</p>
+</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">.+</span></code></p>
+<p>All proxies will match this expression.</p>
+</li>
 </ul>
 <p class="rubric">[Status]</p>
 <ol class="arabic simple" start="0">
@@ -525,7 +528,7 @@ All proxies will match this expression.</p></li>
 <li><p>‘Unmonitored’</p></li>
 </ol>
 <p>All host created with this command will get assigned a
-default interface of type ‘Agent’ using the port 10050.</p>
+default interface of type <code class="docutils literal notranslate"><span class="pre">Agent</span></code> using the port <code class="docutils literal notranslate"><span class="pre">10050</span></code>.</p>
 </dd></dl>
 
 <dl class="py method">
@@ -724,7 +727,7 @@ is not defined.</p>
 <p class="rubric">[macro name]</p>
 <p>Name of the zabbix macro. The system will format this value to
 use the macro format definition needed by Zabbix.
-e.g. site_url will be converted to ${SITE_URL}</p>
+e.g. <code class="docutils literal notranslate"><span class="pre">site_url</span></code> will be converted to <code class="docutils literal notranslate"><span class="pre">${SITE_URL}</span></code>.</p>
 <p class="rubric">[macro value]</p>
 <p>Default value of the macro</p>
 </dd></dl>
@@ -755,7 +758,7 @@ e.g. site_url will be converted to ${SITE_URL}</p>
 <p class="rubric">[macro name]</p>
 <p>Name of the zabbix macro. The system will format this value to
 use the macro format definition needed by Zabbix.
-e.g. site_url will be converted to ${SITE_URL}</p>
+e.g. <code class="docutils literal notranslate"><span class="pre">site_url</span></code> will be converted to <code class="docutils literal notranslate"><span class="pre">${SITE_URL}</span></code>.</p>
 <p class="rubric">[macro value]</p>
 <p>Default value of the macro</p>
 </dd></dl>
@@ -775,15 +778,23 @@ can be used to control some export options.</p>
 <p class="rubric">[export directory]</p>
 <p>Directory where the export files will be saved.</p>
 <p class="rubric">[object type]</p>
-<p>Possible values: groups, hosts, images, maps, screens, templates, mediaTypes
-screens if your version is less than to 6
-mediaTypes if your version is more than or equal to 6
-One can use the special value #all# to export all object type groups.</p>
+<p>Possible values:</p>
+<ul class="simple">
+<li><p>groups</p></li>
+<li><p>hosts</p></li>
+<li><p>images</p></li>
+<li><p>maps</p></li>
+<li><p>templates</p></li>
+<li><p>screens (before Zabbix 6.0)</p></li>
+<li><p>mediaTypes (after Zabbix 6.0)</p></li>
+</ul>
+<p>One can use the special value <code class="docutils literal notranslate"><span class="pre">#all#</span></code> to export all object type groups.</p>
 <p class="rubric">[object name]</p>
 <p>Object name or Zabbix-ID. One can define several values in a comma
 separated list.</p>
-<p>One can use the special value #ALL# to export all objects in a object
-type group. This parameter will be defined automatically as #all# if [object type] == #all#</p>
+<p>One can use the special value <code class="docutils literal notranslate"><span class="pre">#ALL#</span></code> to export all objects in a object
+type group. This parameter will be defined automatically as <code class="docutils literal notranslate"><span class="pre">#all#</span></code> if
+<code class="docutils literal notranslate"><span class="pre">[object</span> <span class="pre">type]</span> <span class="pre">==</span> <span class="pre">#all#</span></code>.</p>
 </dd></dl>
 
 <dl class="py method">
@@ -791,7 +802,7 @@ type group. This parameter will be defined automatically as #all# if [object typ
 <span class="sig-name descname"><span class="pre">do_import_configuration</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#zabbix_cli.cli.zabbixcli.do_import_configuration" title="Permalink to this definition">¶</a></dt>
 <dd><p>This command imports the configuration of a
 Zabbix component.</p>
-<p>We use the options createMissing=True and updateExisting=True
+<p>We use the options <code class="docutils literal notranslate"><span class="pre">createMissing=True</span></code> and <code class="docutils literal notranslate"><span class="pre">updateExisting=True</span></code>
 when importing data. This means that new objects will be
 created if they do not exists and that existing objects will
 be updated if they exist.</p>
@@ -804,10 +815,10 @@ be updated if they exist.</p>
 use the file extension (.json or .xml) to find out the import format.</p>
 <p>This command finds all the pathnames matching a specified
 pattern according to the rules used by the Unix shell.  Tilde
-expansion, *, ?, and character ranges expressed with [] will
-be correctly matched. For a literal match, wrap the
-meta-characters in brackets. For example, ‘[?]’ matches the
-character ‘?’.</p>
+expansion, <code class="docutils literal notranslate"><span class="pre">*</span></code>, <code class="docutils literal notranslate"><span class="pre">?</span></code>, and character ranges expressed with <code class="docutils literal notranslate"><span class="pre">[]</span></code>
+will be correctly matched. For a literal match, wrap the
+meta-characters in brackets. For example, <code class="docutils literal notranslate"><span class="pre">[?]</span></code> matches the
+character <code class="docutils literal notranslate"><span class="pre">?</span></code>.</p>
 <p class="rubric">[dry run]</p>
 <p>If this parameter is used, the command will only show the
 files that would be imported without running the import
@@ -859,11 +870,11 @@ One can define several values in a comma separated list.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">load_balance_proxy_hosts</span> <span class="p">[</span><span class="n">proxy</span> <span class="nb">list</span><span class="p">]</span>
 </pre></div>
 </div>
-<p>[proxy list]:
-Comma delimited list with the proxies that will share the
+<p class="rubric">[proxy list]</p>
+<p>Comma delimited list with the proxies that will share the
 monitoring task for a group of hosts.</p>
 <p>The group of hosts is obtained from the hosts assigned to the
-proxies in [proxy list]</p>
+proxies in <code class="docutils literal notranslate"><span class="pre">[proxy</span> <span class="pre">list]</span></code>.</p>
 </dd></dl>
 
 <dl class="py method">
@@ -1278,8 +1289,8 @@ defines more than one parameter.</p>
 </div>
 <p class="rubric">[usermacro]</p>
 <p>Usermacro name. The system will format this value to use the
-macro format definition needed by Zabbix.  e.g. site_url will be
-converted to ${SITE_URL}</p>
+macro format definition needed by Zabbix.  e.g. <code class="docutils literal notranslate"><span class="pre">site_url</span></code> will
+be converted to <code class="docutils literal notranslate"><span class="pre">${SITE_URL}</span></code>.</p>
 </dd></dl>
 
 <dl class="py method">
@@ -1291,8 +1302,8 @@ converted to ${SITE_URL}</p>
 </div>
 <p class="rubric">[usermacro]</p>
 <p>Usermacro name. The system will format this value to use the
-macro format definition needed by Zabbix.  e.g. site_url will be
-converted to ${SITE_URL}</p>
+macro format definition needed by Zabbix.  e.g. <code class="docutils literal notranslate"><span class="pre">site_url</span></code> will
+be converted to <code class="docutils literal notranslate"><span class="pre">${SITE_URL}</span></code>.</p>
 </dd></dl>
 
 <dl class="py method">
@@ -1373,7 +1384,7 @@ look at possible keys and their current values, use
 <p class="rubric">[hostname]</p>
 <p>Hostname to update</p>
 <p class="rubric">[proxy]</p>
-<p>Zabbix proxy server that will monitor [hostname]</p>
+<p>Zabbix proxy server that will monitor <code class="docutils literal notranslate"><span class="pre">[hostname]</span></code>.</p>
 </dd></dl>
 
 <dl class="py method">
@@ -1412,9 +1423,9 @@ on a hostgroup.</p>
 <p>One can define several values in a comma separated list.</p>
 <p class="rubric">[permission]</p>
 <ul class="simple">
-<li><p>deny: Deny [usergroup] all access to [hostgroups]</p></li>
-<li><p>ro: Give [usergroup] read access to [hostgroups]</p></li>
-<li><p>rw: Give [usergroup] read and write access to [hostgroups]</p></li>
+<li><p><strong>deny</strong>: Deny <code class="docutils literal notranslate"><span class="pre">[usergroup]</span></code> all access to <code class="docutils literal notranslate"><span class="pre">[hostgroups]</span></code></p></li>
+<li><p><strong>ro</strong>: Give <code class="docutils literal notranslate"><span class="pre">[usergroup]</span></code> read access to <code class="docutils literal notranslate"><span class="pre">[hostgroups]</span></code></p></li>
+<li><p><strong>rw</strong>: Give <code class="docutils literal notranslate"><span class="pre">[usergroup]</span></code> read and write access to <code class="docutils literal notranslate"><span class="pre">[hostgroups]</span></code></p></li>
 </ul>
 </dd></dl>
 
@@ -1452,7 +1463,7 @@ distributed under GNU General Public License 3.</p>
       &copy;2022, University of Oslo.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 5.0.2</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 5.2.2</a>
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
     </div>
