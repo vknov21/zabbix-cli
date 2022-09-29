@@ -866,8 +866,9 @@ One can define several values in a comma separated list.</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="zabbix_cli.cli.zabbixcli.do_load_balance_proxy_hosts">
 <span class="sig-name descname"><span class="pre">do_load_balance_proxy_hosts</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#zabbix_cli.cli.zabbixcli.do_load_balance_proxy_hosts" title="Permalink to this definition">¶</a></dt>
-<dd><p>This command will spread hosts evenly along a serie of proxies.</p>
+<dd><p>This command will spread hosts among the given proxies.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">load_balance_proxy_hosts</span> <span class="p">[</span><span class="n">proxy</span> <span class="nb">list</span><span class="p">]</span>
+                         <span class="p">[</span><span class="n">weight</span><span class="p">]</span>
 </pre></div>
 </div>
 <p class="rubric">[proxy list]</p>
@@ -875,21 +876,43 @@ One can define several values in a comma separated list.</p>
 monitoring task for a group of hosts.</p>
 <p>The group of hosts is obtained from the hosts assigned to the
 proxies in <code class="docutils literal notranslate"><span class="pre">[proxy</span> <span class="pre">list]</span></code>.</p>
+<p class="rubric">[weight]</p>
+<p>Optional weight distribution for the proxy list.  I.e.:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">load_balance_proxy_hosts</span> <span class="n">p1</span><span class="p">,</span><span class="n">p2</span> <span class="mi">1</span><span class="p">,</span><span class="mi">2</span>
+</pre></div>
+</div>
+<p>That would place twice as many hosts on proxy <strong>p2</strong>.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">load_balance_proxy_hosts</span> <span class="n">p1</span><span class="p">,</span><span class="n">p2</span><span class="p">,</span><span class="n">p3</span> <span class="mi">20</span><span class="p">,</span><span class="mi">40</span><span class="p">,</span><span class="mi">40</span>
+</pre></div>
+</div>
+<p>In this example, <strong>p1</strong> would get 20% of hosts, whereas <strong>p2</strong>
+and <strong>p3</strong> get 40% each.</p>
+<p>If not provided, the load is spread evenly among all provided proxies.</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="zabbix_cli.cli.zabbixcli.do_move_proxy_hosts">
 <span class="sig-name descname"><span class="pre">do_move_proxy_hosts</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#zabbix_cli.cli.zabbixcli.do_move_proxy_hosts" title="Permalink to this definition">¶</a></dt>
 <dd><p>This command moves all hosts monitored by a proxy (src) to
-another proxy (dst).</p>
+another proxy (dst).  Optionally only move hosts matching
+<code class="docutils literal notranslate"><span class="pre">host_filter</span></code>.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">move_proxy_hosts</span> <span class="p">[</span><span class="n">proxy_src</span><span class="p">]</span>
                  <span class="p">[</span><span class="n">proxy_dst</span><span class="p">]</span>
+                 <span class="p">[</span><span class="n">host_filter</span><span class="p">]</span>
 </pre></div>
 </div>
 <p class="rubric">[proxy_src]</p>
 <p>Source proxy server.</p>
 <p class="rubric">[proxy_dst]</p>
 <p>Destination proxy server.</p>
+<p class="rubric">[host_filter]</p>
+<p>Optional pattern for which hosts to move.  For example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">move_proxy_hosts</span> <span class="n">p1</span> <span class="n">p2</span> <span class="n">p01</span><span class="o">-*.</span><span class="n">example</span><span class="o">.</span><span class="n">org</span>
+</pre></div>
+</div>
+<p>Moves all hosts belonging to proxy <strong>p1</strong> whose hostname start with
+<code class="docutils literal notranslate"><span class="pre">p01-</span></code> and ends with <code class="docutils literal notranslate"><span class="pre">.example.org</span></code> to the proxy <strong>p2</strong>.</p>
+<p>If left empty, all hosts residing on <code class="docutils literal notranslate"><span class="pre">proxy_src</span></code> will be moved.</p>
 </dd></dl>
 
 <dl class="py method">
