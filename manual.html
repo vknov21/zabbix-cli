@@ -389,6 +389,7 @@ or special characters for the shell, .e.g.</p>
 <dd><p>This command acknowledges an event</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">acknowledge_events</span> <span class="p">[</span><span class="n">eventIDs</span><span class="p">]</span>
                    <span class="p">[</span><span class="n">message</span><span class="p">]</span>
+                   <span class="p">[</span><span class="n">close</span><span class="p">]</span>
 </pre></div>
 </div>
 <p class="rubric">[eventIDs]</p>
@@ -396,6 +397,11 @@ or special characters for the shell, .e.g.</p>
 values in a comma separated list.</p>
 <p class="rubric">[message]</p>
 <p>Text of the acknowledgement message.</p>
+<p class="rubric">[close]</p>
+<p>Whether to also close the event.</p>
+<p>Values:</p>
+<p>false - (default) Leave the event opened.
+true - Close the event.</p>
 </dd></dl>
 
 <dl class="py method">
@@ -404,6 +410,7 @@ values in a comma separated list.</p>
 <dd><p>This command acknowledges the last event of a trigger.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">acknowledge_trigger_last_event</span> <span class="p">[</span><span class="n">triggerIDs</span><span class="p">]</span>
                                <span class="p">[</span><span class="n">message</span><span class="p">]</span>
+                               <span class="p">[</span><span class="n">close</span><span class="p">]</span>
 </pre></div>
 </div>
 <p class="rubric">[triggerIDs]</p>
@@ -411,6 +418,11 @@ values in a comma separated list.</p>
 values in a comma separated list.</p>
 <p class="rubric">[message]</p>
 <p>Text of the acknowledgement message.</p>
+<p class="rubric">[close]</p>
+<p>Whether to also close the event.</p>
+<p>Values:</p>
+<p>false - (default) Leave the event opened.
+true - Close the event.</p>
 </dd></dl>
 
 <dl class="py method">
@@ -1483,7 +1495,7 @@ distributed under GNU General Public License 3.</p>
       &copy;2022, University of Oslo.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 5.2.3</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 5.3.0</a>
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
     </div>
