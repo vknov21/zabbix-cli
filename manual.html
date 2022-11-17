@@ -595,7 +595,7 @@ default interface of type <code class="docutils literal notranslate"><span class
 <span class="sig-name descname"><span class="pre">do_create_maintenance_definition</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#zabbix_cli.cli.zabbixcli.do_create_maintenance_definition" title="Permalink to this definition">¶</a></dt>
 <dd><p>This command creates a ‘one time only’ maintenance definition
 for a defined period of time. Use the zabbix dashboard for
-more advance definitions.</p>
+more advanced definitions.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">create_maintenance_definition</span> <span class="p">[</span><span class="n">name</span><span class="p">]</span>
                               <span class="p">[</span><span class="n">description</span><span class="p">]</span>
                               <span class="p">[</span><span class="n">host</span><span class="o">/</span><span class="n">hostgroup</span><span class="p">]</span>
@@ -606,7 +606,7 @@ more advance definitions.</p>
 <p class="rubric">[name]</p>
 <p>Maintenance definition name.</p>
 <p class="rubric">[description]</p>
-<p>Maintenance definition description</p>
+<p>Maintenance description.</p>
 <p class="rubric">[host/hostgroup]</p>
 <p>Host/s and/or hostgroup/s the that will undergo
 maintenance.</p>
@@ -624,7 +624,7 @@ definition is created.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">2</span> <span class="n">hours</span>
 </pre></div>
 </div>
-<p>Means 2 hours from the moment we create the maintenance.</p>
+<p>Means the maintenance starts now and lasts for two hours.</p>
 <p class="rubric">[maintenance type]</p>
 <p>Maintenance type.</p>
 <p>Type values:</p>
